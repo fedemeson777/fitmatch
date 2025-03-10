@@ -1,0 +1,16 @@
+{
+  "name": "fitmatch",
+  "version": "1.0.0",
+  "description": "Aplicación para encontrar compañeros de entrenamiento",
+  "scripts": {
+    "start": "cd server && npm start",
+    "dev": "cd server && npm run dev",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "client": "cd client && npm start",
+    "server": "cd server && npm run dev",
+    "dev-full": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
